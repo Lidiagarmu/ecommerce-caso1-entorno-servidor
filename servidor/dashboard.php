@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['logout'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../cliente/styles/style.css">
 </head>
 <body>
     <div id="app" class="app-container">
@@ -50,10 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['logout'])) {
         <section id="cart">
             <h2>Carrito</h2>
             <select id="product-select">
-                <option  >Zapatos - 30€</option>
-                <option >Camiseta - 10€</option>
-                <option >Abrigo - 50€</option>
-                <option >Guantes - 5€</option>
+                <option value="1" data-price="10">Zapatos - 30€</option>
+                <option value="2" data-price="20">Camiseta - 10€</option>
+                <option value="3" data-price="30">Abrigo - 50€</option>
+                <option value="3" data-price="30">Guantes - 5€</option>
             </select>
             <button onclick="addToCart()">Añadir al carrito</button>
 

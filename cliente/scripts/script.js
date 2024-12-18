@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     loadPreferences();
     clearCart(); // Limpiar carrito al cargar la página
+
 });
 
 function loadPreferences() {
