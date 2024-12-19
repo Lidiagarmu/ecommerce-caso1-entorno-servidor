@@ -132,7 +132,7 @@ select {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #6200ea;
+    background-color: #7e31eb;
     color: white;
 }
 
@@ -171,6 +171,6 @@ button[type="submit"]:hover {
 }
 
 .error {
-    color: red;
+    color: white;
     margin-bottom: 15px;
 }
