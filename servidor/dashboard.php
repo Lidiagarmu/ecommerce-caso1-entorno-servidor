@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['logout'])) {
                 <option value="3" data-price="30">Abrigo - 50€</option>
                 <option value="3" data-price="30">Guantes - 5€</option>
             </select>
-            <button onclick="addToCart()">Añadir al carrito</button>
+            <button onclick="addToCart(event)">Añadir al carrito</button>
 
             <div id="cart-items"></div>
         </section>

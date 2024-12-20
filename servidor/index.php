@@ -1,9 +1,7 @@
-<?php 
-
-//index.php
+<?php
 session_start();
 if (isset($_SESSION["user"])){
-    header("Location: dashboard.php");
+    header("Location: dashboard.php");  // Si ya está autenticado, lo redirige al dashboard
     exit();
 }
 
@@ -14,13 +12,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     //validacion simple para lidia / prueba1
     if($usuario === "Lidia" && $contrasena === "123"){
         $_SESSION['user'] = $usuario;
-        header("Location: dashboard.php");
+        header("Location: dashboard.php");  // Si las credenciales son correctas, lo redirige al dashboard
         exit();
-} else {
-    $error = "Usuario o contraseña incorrectos";
-}
+    } else {
+        $error = "Usuario o contraseña incorrectos";
+    }
 }
 ?>
+
 
 
 <!DOCTYPE html>
